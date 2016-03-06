@@ -1,0 +1,62 @@
+2016-03-06 16:34:34 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_bbs.my_bbs' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'my_bbs', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('my_bbs', Array)
+#2 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('my_bbs')
+#3 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'my_bbs', 'MyBbs')
+#7 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('MyBbs')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('my_bbs')
+#9 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\Shell.php(456): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\Shell.php(450): Cake\Console\Shell->runCommand(Array, false)
+#11 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 C:\xampp\htdocs\cakephp3\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2016-03-06 16:47:44 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_bbs.my_bbs' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'my_bbs', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('my_bbs', Array)
+#2 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('my_bbs')
+#3 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'my_bbs', 'MyBbs')
+#7 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('MyBbs')
+#8 [internal function]: Bake\Shell\Task\ModelTask->main('my_bbs')
+#9 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\Shell.php(456): call_user_func_array(Array, Array)
+#10 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\Shell.php(450): Cake\Console\Shell->runCommand(Array, false)
+#11 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#12 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#13 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#14 C:\xampp\htdocs\cakephp3\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#15 {main}
+
+
+2016-03-06 16:50:46 Error: [Cake\Database\Exception] SQLSTATE[42S02]: Base table or view not found: 1146 Table 'my_bbs.users' doesn't exist
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(96): Cake\Database\Schema\Collection->_reflect('Column', 'users', Array, Object(Cake\Database\Schema\Table))
+#1 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(64): Cake\Database\Schema\Collection->describe('users', Array)
+#2 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\ORM\Table.php(429): Cake\Database\Schema\CachedCollection->describe('users')
+#3 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\ORM\Table.php(505): Cake\ORM\Table->schema()
+#4 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(206): Cake\ORM\Table->primaryKey()
+#5 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(124): Bake\Shell\Task\ModelTask->getAssociations(Object(Cake\ORM\Table))
+#6 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(109): Bake\Shell\Task\ModelTask->getTableContext(Object(Cake\ORM\Table), 'users', 'Users')
+#7 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(96): Bake\Shell\Task\ModelTask->bake('Users')
+#8 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\BakeShell.php(250): Bake\Shell\Task\ModelTask->main('Users')
+#9 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Collection\CollectionTrait.php(51): Bake\Shell\BakeShell->Bake\Shell\{closure}('users', 0)
+#10 C:\xampp\htdocs\cakephp3\vendor\cakephp\bake\src\Shell\BakeShell.php(253): Cake\Collection\Collection->each(Object(Closure))
+#11 [internal function]: Bake\Shell\BakeShell->all('users')
+#12 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\Shell.php(444): call_user_func_array(Array, Array)
+#13 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(217): Cake\Console\Shell->runCommand(Array, true, Array)
+#14 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(181): Cake\Console\ShellDispatcher->_dispatch(Array)
+#15 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Console\ShellDispatcher.php(127): Cake\Console\ShellDispatcher->dispatch(Array)
+#16 C:\xampp\htdocs\cakephp3\bin\cake.php(33): Cake\Console\ShellDispatcher::run(Array)
+#17 {main}
+
+
