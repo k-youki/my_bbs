@@ -10,7 +10,9 @@
 <div class="col-md-3" >
     <?= $this->Form->create($postEntity, [
             'type' => 'file',
-            'url' => ['action' => 'add']
+            'url' => [
+                'action' => 'add'
+            ]
         ]) ?>
         <fieldset>
             <legend><?= __('投稿欄') ?></legend>
@@ -22,7 +24,7 @@
                 'label' => 'Image'
             ]);
             echo $this->Form->button('投稿', [
-                'class' => 'btn btn-primary',
+                'class' => 'btn btn-primary'
             ]);
             ?>
         </fieldset>
@@ -35,9 +37,9 @@
             <table cellpadding="0" cellspacing="0" class="table table-striped">
                 <thead>
                     <tr>
-                        <th><?= $this->Paginator->sort('名前') ?></th>
-                        <th><?= $this->Paginator->sort('内容') ?></th>
-                        <th><?= $this->Paginator->sort('投稿日付') ?></th>
+                        <th><?= $this->Paginator->sort('name') ?></th>
+                        <th><?= $this->Paginator->sort('contents') ?></th>
+                        <th><?= $this->Paginator->sort('date') ?></th>
                         <th class="actions"><?= __('Actions') ?></th>
                     </tr>
                 </thead>
