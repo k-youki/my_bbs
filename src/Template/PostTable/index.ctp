@@ -1,7 +1,7 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" id="actions-sidebar">
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="PostTable">こたに掲示板</a>
+        <div class="navbar-header">        
+            <a class="navbar-brand" href="bbs.php">こたに掲示板</a>
         </div>
 
     </div>
@@ -9,13 +9,12 @@
 
 <div class="col-md-3" >
     <?= $this->Form->create($postEntity, [
-            'type' => 'file',
-            'url' => [
-                'action' => 'add'
-            ]
+        'type' => 'file',
+        'url' => [
+            'action' => 'add'
+        ]
         ]) ?>
         <fieldset>
-            <legend><?= __('投稿欄') ?></legend>
             <?php
             echo $this->Form->input('name');
             echo $this->Form->input('contents');
@@ -32,7 +31,6 @@
     </div>
 
     <div class="col-md-9">
-        <h3><?= __('タイムライン') ?></h3>
         <div class="table-responsive">
             <table cellpadding="0" cellspacing="0" class="table table-striped">
                 <thead>

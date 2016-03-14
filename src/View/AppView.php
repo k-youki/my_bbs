@@ -13,7 +13,7 @@
  */
 namespace App\View;
 
-use Cake\View\View;
+use BootstrapUI\View\UIView;
 
 /**
  * Application View
@@ -22,9 +22,9 @@ use Cake\View\View;
  *
  * @link http://book.cakephp.org/3.0/en/views.html#the-app-view
  */
-class AppView extends View
+class AppView extends UIView
 {
-
+    public $layout = 'BootstrapUI.default';
     /**
      * Initialization hook method.
      *

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "8627d1e3271e11fe84f96116d0c881c2",
-    "content-hash": "d5cc274dea5a5a05ad5ca265c7fc27f2",
+    "hash": "df416345491479020d2ec48c9247f038",
+    "content-hash": "3f9571df670e06ed28a085fb68a46ac7",
     "packages": [
         {
             "name": "aura/installer-default",
@@ -345,16 +345,16 @@
         },
         {
             "name": "friendsofcake/bootstrap-ui",
-            "version": "v0.4.0",
+            "version": "v0.4.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfCake/bootstrap-ui.git",
-                "reference": "a696d5acaa2f3fc8bc2c8b77ef429791081be926"
+                "reference": "1030a62bd8c04aece85824ffc8cc97703403995c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfCake/bootstrap-ui/zipball/a696d5acaa2f3fc8bc2c8b77ef429791081be926",
-                "reference": "a696d5acaa2f3fc8bc2c8b77ef429791081be926",
+                "url": "https://api.github.com/repos/FriendsOfCake/bootstrap-ui/zipball/1030a62bd8c04aece85824ffc8cc97703403995c",
+                "reference": "1030a62bd8c04aece85824ffc8cc97703403995c",
                 "shasum": ""
             },
             "require": {
@@ -391,7 +391,7 @@
                 "cakephp",
                 "twitter"
             ],
-            "time": "2016-02-13 07:09:35"
+            "time": "2016-03-13 10:32:02"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -556,7 +556,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/8c83ff9a2ffbed1e606bc816db11ddc2385a16ee",
+                "url": "https://api.github.com/repos/symfony/config/zipball/38711092665edc06ef55e842942fb813932ff4ac",
                 "reference": "8c83ff9a2ffbed1e606bc816db11ddc2385a16ee",
                 "shasum": ""
             },

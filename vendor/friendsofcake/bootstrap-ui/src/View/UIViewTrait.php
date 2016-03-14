@@ -11,12 +11,22 @@ trait UIViewTrait
     /**
      * Initialization hook method.
      *
+     * @param array $options Associative array with valid keys:
+     *   - `layout`:
+     *      - If not set or true will use the plugin's layout
+     *      - If a layout name passed it will be used
+     *      - If false do nothing (will keep your layout)
+     *
      * @return void
      */
-    public function initializeUI()
+    public function initializeUI(array $options = [])
     {
-        if (empty($this->layout) || $this->layout === 'default') {
+        if ((!isset($options['layout']) || $options['layout'] === true) &&
+            $this->layout === 'default'
+        ) {
             $this->layout = 'BootstrapUI.default';
+        } elseif (isset($options['layout']) && is_string($options['layout'])) {
+            $this->layout = $options['layout'];
         }
 
         $this->loadHelper('Html', ['className' => 'BootstrapUI.Html']);

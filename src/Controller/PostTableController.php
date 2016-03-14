@@ -78,8 +78,6 @@ class PostTableController extends AppController
                 $this->Flash->error(__('The post table could not be saved. Please, try again.'));
             }
         }
-        $this->set(compact('postTable'));
-        $this->set('_serialize', ['postTable']);
     }
 
     /**
