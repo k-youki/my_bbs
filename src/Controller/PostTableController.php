@@ -22,35 +22,8 @@ class PostTableController extends AppController
     {
         $postTable = $this->paginate($this->PostTable);
         $postEntity = $this->PostTable->newEntity();
-        if ($this->request->is('post')) {
-            $postEntity = $this->PostTable->patchEntity($postEntity, $this->request->data);
-            //画像アップロード処理---------------------------------
-            $upload_file = $this->request->data['upload'];
-            $postEntity->image = $upload_file['name'];
-            if( $upload_file['name'] ){
-                $path = "img/uploads/{$upload_file['name']}";
-                move_uploaded_file( $upload_file['tmp_name'], $path);
-                list($sw, $sh) = getimagesize($path);
-                $dw = 128;
-                $dh = $dw * $sh / $sw;
-                $src = imagecreatefromjpeg($path);
-                $dst = imagecreatetruecolor($dw, $dh);
-                imagecopyresized($dst, $src, 0, 0, 0, 0, $dw, $dh, $sw, $sh);
-                imagejpeg($dst, "img/uploads/t_{$upload_file['name']}");
-            }
-            //-------------------------------------------------
-            $postEntity->date = Time();
 
-
-            if ($this->PostTable->save($postEntity)) {
-                $this->Flash->success(__('The post table has been saved.'));
-                return $this->redirect(['action' => 'index']);
-            } else {
-                $this->Flash->error(__('The post table could not be saved. Please, try again.'));
-            }
-        }
         $this->set(compact('postTable','postEntity'));
-        $this->set('_serialize', ['postEntity']);
         $this->set('_serialize', ['postTable']);
     }
 
@@ -76,12 +49,29 @@ class PostTableController extends AppController
     *
     * @return \Cake\Network\Response|void Redirects on successful add, renders view otherwise.
     */
-    public function add()
+    public function add( $postEntity )
     {
-        $postTable = $this->PostTable->newEntity();
+        $postEntity = $this->PostTable->newEntity();
+
         if ($this->request->is('post')) {
-            $postTable = $this->PostTable->patchEntity($postTable, $this->request->data);
-            if ($this->PostTable->save($postTable)) {
+            $postEntity = $this->PostTable->patchEntity($postEntity, $this->request->data);
+            //画像アップロード処理---------------------------------
+            $upload_file = $this->request->data['upload'];
+            $postEntity->image = $upload_file['name'];
+            if( $upload_file['name'] ){
+                $path = "img/uploads/{$upload_file['name']}";
+                move_uploaded_file( $upload_file['tmp_name'], $path);
+                list($sw, $sh) = getimagesize($path);
+                $dw = 128;
+                $dh = $dw * $sh / $sw;
+                $src = imagecreatefromjpeg($path);
+                $dst = imagecreatetruecolor($dw, $dh);
+                imagecopyresized($dst, $src, 0, 0, 0, 0, $dw, $dh, $sw, $sh);
+                imagejpeg($dst, "img/uploads/t_{$upload_file['name']}");
+            }
+            //-------------------------------------------------
+            $postEntity->date = Time();
+            if ($this->PostTable->save($postEntity)) {
                 $this->Flash->success(__('The post table has been saved.'));
                 return $this->redirect(['action' => 'index']);
             } else {

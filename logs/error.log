@@ -2739,3 +2739,145 @@ Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
 
 
 
+2016-03-14 04:33:01 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\cakephp3\src\Controller\PostTableController.php, line 26]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 99
+[main] - [internal], line ??
+
+
+
+2016-03-14 04:33:01 Error: [Cake\Error\FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp3/post-table
+Referer URL: http://localhost/cakephp3/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(99): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 26)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-14 04:50:59 Warning: Warning (2): Missing argument 1 for App\Controller\PostTableController::add() in [C:\xampp\htdocs\cakephp3\src\Controller\PostTableController.php, line 52]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-14 04:50:59 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Table::patchEntity() must be an instance of Cake\Datasource\EntityInterface, null given, called in C:\xampp\htdocs\cakephp3\src\Controller\PostTableController.php on line 55 and defined in [C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\ORM\Table.php, line 2067]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 2067
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 55
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-14 04:50:59 Warning: Warning (4096): Argument 1 passed to Cake\ORM\Marshaller::merge() must be an instance of Cake\Datasource\EntityInterface, null given, called in C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\ORM\Table.php on line 2073 and defined in [C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 448]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+Cake\ORM\Marshaller::merge() - CORE\src\ORM\Marshaller.php, line 448
+Cake\ORM\Table::patchEntity() - CORE\src\ORM\Table.php, line 2073
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 55
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-14 04:50:59 Error: Fatal Error (1): Call to a member function isNew() on null in [C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\ORM\Marshaller.php, line 453]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 99
+[main] - [internal], line ??
+
+
+
+2016-03-14 04:50:59 Error: [Cake\Error\FatalErrorException] Call to a member function isNew() on null
+Request URL: /cakephp3/post-table/add
+Referer URL: http://localhost/cakephp3/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(99): Cake\Error\BaseErrorHandler->handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 453)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-14 04:52:37 Warning: Warning (2): Missing argument 1 for App\Controller\PostTableController::add() in [C:\xampp\htdocs\cakephp3\src\Controller\PostTableController.php, line 52]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-14 04:58:57 Error: Fatal Error (4): syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']' in [C:\xampp\htdocs\cakephp3\src\Template\PostTable\index.ctp, line 13]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 99
+[main] - [internal], line ??
+
+
+
+2016-03-14 04:58:57 Error: [Cake\Error\FatalErrorException] syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ']'
+Request URL: /cakephp3/post-table
+Referer URL: http://localhost/cakephp3/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp3\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(99): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 13)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-14 04:59:23 Warning: Warning (2): Missing argument 1 for App\Controller\PostTableController::add() in [C:\xampp\htdocs\cakephp3\src\Controller\PostTableController.php, line 52]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-14 04:59:34 Warning: Warning (2): Missing argument 1 for App\Controller\PostTableController::add() in [C:\xampp\htdocs\cakephp3\src\Controller\PostTableController.php, line 52]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-14 04:59:41 Warning: Warning (2): Missing argument 1 for App\Controller\PostTableController::add() in [C:\xampp\htdocs\cakephp3\src\Controller\PostTableController.php, line 52]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-14 04:59:51 Warning: Warning (2): Missing argument 1 for App\Controller\PostTableController::add() in [C:\xampp\htdocs\cakephp3\src\Controller\PostTableController.php, line 52]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 52
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+

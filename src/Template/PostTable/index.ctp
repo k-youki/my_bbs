@@ -9,7 +9,8 @@
 
 <div class="col-md-3" >
     <?= $this->Form->create($postEntity, [
-        'enctype' => 'multipart/form-data'
+            'type' => 'file',
+            'url' => ['action' => 'add']
         ]) ?>
         <fieldset>
             <legend><?= __('投稿欄') ?></legend>
@@ -21,7 +22,7 @@
                 'label' => 'Image'
             ]);
             echo $this->Form->button('投稿', [
-                'class' => 'btn btn-primary'
+                'class' => 'btn btn-primary',
             ]);
             ?>
         </fieldset>
