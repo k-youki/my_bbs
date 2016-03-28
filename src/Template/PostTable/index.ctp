@@ -1,7 +1,7 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
-        <div class="navbar-header">        
-            <a class="navbar-brand" href="bbs.php">こたに掲示板</a>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="post-table">こたに掲示板</a>
         </div>
 
     </div>

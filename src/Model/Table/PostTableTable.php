@@ -43,7 +43,7 @@ class PostTableTable extends Table
 
         $validator
             ->requirePresence('name', 'create')
-            ->notEmpty('name');
+            ->allowEmpty('name');
 
         $validator
             ->requirePresence('contents', 'create')

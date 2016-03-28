@@ -55,6 +55,10 @@ class PostTableController extends AppController
 
         if ($this->request->is('post')) {
             $postEntity = $this->PostTable->patchEntity($postEntity, $this->request->data);
+            //name未入力を名無しさんとして処理
+            if( $postEntity->name == null ){
+                $postEntity->name = '名無しさん';
+            }
             //画像アップロード処理---------------------------------
             $upload_file = $this->request->data['upload'];
             $postEntity->image = $upload_file['name'];

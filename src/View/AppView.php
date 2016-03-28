@@ -24,7 +24,6 @@ use BootstrapUI\View\UIView;
  */
 class AppView extends UIView
 {
-    public $layout = 'BootstrapUI.default';
     /**
      * Initialization hook method.
      *
@@ -36,6 +35,7 @@ class AppView extends UIView
      */
     public function initialize()
     {
+        //$this->extend('../Layout/TwitterBootstrap/signin');
         //Don't forget to call the parent::initialize()
         parent::initialize();
     }
