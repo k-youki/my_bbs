@@ -53,7 +53,7 @@
                                 ?></td>
                                 <td><?= h($postTable->date) ?></td>
                                 <td class="actions">
-                                    <?= $this->Form->postLink(__('Delete'), ['action' => 'delete', $postTable->id], ['confirm' => __('Are you sure you want to delete ?')]) ?>
+                                    <!-- $this->Form->postLink(__('Delete'), ['action' => 'delete', $postTable->id], ['confirm' => __('Are you sure you want to delete ?')]) -->
                                 </td>
                             </tr>
                         <?php endforeach; ?>
