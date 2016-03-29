@@ -47,9 +47,9 @@
                             <td><?= h($postTable->name) ?></td>
                             <td><?= h($postTable->contents) ?>
                                 <?php
-                                if ($postTable->image) {
+                                if ($postTable->image):
                                     print "<br><a href='img/uploads/$postTable->image'><img src='img/uploads/t_{$postTable->image}' border='0'></a>";
-                                }
+                                endif;
                                 ?></td>
                                 <td><?= h($postTable->date) ?></td>
                                 <td class="actions">
