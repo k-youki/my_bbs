@@ -5490,3 +5490,31 @@ Stack Trace:
 #1 {main}
 
 
+2016-03-29 07:17:56 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-29 08:22:14 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
