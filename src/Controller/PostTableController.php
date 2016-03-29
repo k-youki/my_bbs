@@ -10,16 +10,14 @@ use App\Controller\AppController;
 *
 * @property \App\Model\Table\PostTableTable $PostTable
 */
-class PostTableController extends AppController
-{
+class PostTableController extends AppController {
 
     /**
     * Index method
     *
     * @return \Cake\Network\Response|null
     */
-    public function index()
-    {
+    public function index() {
         $postTable = $this->paginate($this->PostTable);
         $postEntity = $this->PostTable->newEntity();
 
@@ -34,8 +32,7 @@ class PostTableController extends AppController
     * @return \Cake\Network\Response|null
     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
     */
-    public function view($id = null)
-    {
+    public function view($id = null) {
         $postTable = $this->PostTable->get($id, [
             'contain' => []
         ]);
@@ -49,12 +46,14 @@ class PostTableController extends AppController
     *
     * @return \Cake\Network\Response|void Redirects on successful add, renders view otherwise.
     */
-    public function add( $postEntity )
-    {
+    public function add($postEntity) {
         $postEntity = $this->PostTable->newEntity();
 
         if ($this->request->is('post')) {
-            $postEntity = $this->PostTable->patchEntity($postEntity, $this->request->data);
+            $postEntity = $this->PostTable->patchEntity(
+                $postEntity,
+                $this->request->data
+            );
             //name未入力を名無しさんとして処理
             if ($postEntity->name == null) {
                 $postEntity->name = '名無しさん';
@@ -91,8 +90,7 @@ class PostTableController extends AppController
     * @return \Cake\Network\Response|void Redirects on successful edit, renders view otherwise.
     * @throws \Cake\Network\Exception\NotFoundException When record not found.
     */
-    public function edit($id = null)
-    {
+    public function edit($id = null) {
         $postTable = $this->PostTable->get($id, [
             'contain' => []
         ]);
@@ -116,8 +114,7 @@ class PostTableController extends AppController
     * @return \Cake\Network\Response|null Redirects to index.
     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
     */
-    public function delete($id = null)
-    {
+    public function delete($id = null){
         $this->request->allowMethod(['post', 'delete']);
         $postTable = $this->PostTable->get($id);
         if ($this->PostTable->delete($postTable)) {

@@ -3,16 +3,13 @@
         <div class="navbar-header">
             <a class="navbar-brand" href="post-table">こたに掲示板</a>
         </div>
-
     </div>
 </nav>
 
-<div class="col-md-3" >
+<div class="col-md-3">
     <?= $this->Form->create($postEntity, [
         'type' => 'file',
-        'url' => [
-            'action' => 'add'
-        ]
+        'url' => ['action' => 'add']
         ]) ?>
         <fieldset>
             <?php
