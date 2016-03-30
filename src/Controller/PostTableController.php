@@ -17,7 +17,8 @@ class PostTableController extends AppController {
     *
     * @return \Cake\Network\Response|null
     */
-    public function index() {
+    public function index()
+    {
         $postTable = $this->paginate($this->PostTable);
         $postEntity = $this->PostTable->newEntity();
 
@@ -32,7 +33,8 @@ class PostTableController extends AppController {
     * @return \Cake\Network\Response|null
     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
     */
-    public function view($id = null) {
+    public function view($id = null)
+    {
         $postTable = $this->PostTable->get($id, [
             'contain' => []
         ]);
@@ -46,7 +48,8 @@ class PostTableController extends AppController {
     *
     * @return \Cake\Network\Response|void Redirects on successful add, renders view otherwise.
     */
-    public function add($postEntity) {
+    public function add($postEntity)
+    {
         $postEntity = $this->PostTable->newEntity();
 
         if ($this->request->is('post')) {
@@ -62,15 +65,7 @@ class PostTableController extends AppController {
             $upload_file = $this->request->data['upload'];
             $postEntity->image = $upload_file['name'];
             if ($upload_file['name']) {
-                $path = "img/uploads/{$upload_file['name']}";
-                move_uploaded_file( $upload_file['tmp_name'], $path);
-                list($sw, $sh) = getimagesize($path);
-                $dw = 128;
-                $dh = $dw * $sh / $sw;
-                $src = imagecreatefromjpeg($path);
-                $dst = imagecreatetruecolor($dw, $dh);
-                imagecopyresized($dst, $src, 0, 0, 0, 0, $dw, $dh, $sw, $sh);
-                imagejpeg($dst, "img/uploads/t_{$upload_file['name']}");
+                $this->PostTable->img_upload($upload_file);
             }
             //-------------------------------------------------
             $postEntity->date = Time();
@@ -90,7 +85,8 @@ class PostTableController extends AppController {
     * @return \Cake\Network\Response|void Redirects on successful edit, renders view otherwise.
     * @throws \Cake\Network\Exception\NotFoundException When record not found.
     */
-    public function edit($id = null) {
+    public function edit($id = null)
+    {
         $postTable = $this->PostTable->get($id, [
             'contain' => []
         ]);
@@ -114,7 +110,8 @@ class PostTableController extends AppController {
     * @return \Cake\Network\Response|null Redirects to index.
     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
     */
-    public function delete($id = null){
+    public function delete($id = null)
+    {
         $this->request->allowMethod(['post', 'delete']);
         $postTable = $this->PostTable->get($id);
         if ($this->PostTable->delete($postTable)) {

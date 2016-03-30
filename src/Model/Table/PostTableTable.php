@@ -57,4 +57,17 @@ class PostTableTable extends Table {
 
         return $validator;
     }
+
+    public function img_upload($upload_file)
+    {
+        $path = "img/uploads/{$upload_file['name']}";
+        move_uploaded_file($upload_file['tmp_name'], $path);
+        list($sw, $sh) = getimagesize($path);
+        $dw = 128;
+        $dh = $dw * $sh / $sw;
+        $src = imagecreatefromjpeg($path);
+        $dst = imagecreatetruecolor($dw, $dh);
+        imagecopyresized($dst, $src, 0, 0, 0, 0, $dw, $dh, $sw, $sh);
+        imagejpeg($dst, "img/uploads/thumbnails/".$upload_file['name']);
+    }
 }

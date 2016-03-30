@@ -45,7 +45,7 @@
                             <td><?= h($postTable->contents) ?>
                                 <?php
                                 if ($postTable->image):
-                                    print "<br><a href='img/uploads/$postTable->image'><img src='img/uploads/t_{$postTable->image}' border='0'></a>";
+                                    print "<br><a href='img/uploads/$postTable->image'><img src='img/uploads/thumbnails/$postTable->image' border='0'></a>";
                                 endif;
                                 ?></td>
                                 <td><?= h($postTable->date) ?></td>
