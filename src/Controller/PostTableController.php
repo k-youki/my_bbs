@@ -64,16 +64,14 @@ class PostTableController extends AppController {
             //画像アップロード処理---------------------------------
             $upload_file = $this->request->data['upload'];
             $postEntity->image = $upload_file['name'];
-            if ($upload_file['name']) {
-                $this->PostTable->img_upload($upload_file);
-            }
+            $this->PostTable->img_upload($upload_file);
             //-------------------------------------------------
             $postEntity->date = Time();
             if ($this->PostTable->save($postEntity)) {
-                $this->Flash->success(__('The post table has been saved.'));
+                $this->Flash->success(__('投稿に成功しました。'));
                 return $this->redirect(['action' => 'index']);
             } else {
-                $this->Flash->error(__('The post table could not be saved. Please, try again.'));
+                $this->Flash->error(__('投稿に失敗しました。'));
             }
         }
     }

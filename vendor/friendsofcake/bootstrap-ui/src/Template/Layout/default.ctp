@@ -72,15 +72,17 @@ $html5Shim =
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 HTML;
-$this->prepend('css', $this->Html->css(['//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css']));
+$this->prepend('css', $this->Html->css('lightbox'));
 
+$this->prepend('css', $this->Html->css(['//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css']));
 $this->append('css', $html5Shim);
 
 /**
 * Prepend `script` block with jQuery and Bootstrap scripts
 */
-$this->prepend('script', $this->Html->script(['jquery/jquery', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js']));
+$this->prepend('script', $this->Html->script('lightbox'));
 
+$this->prepend('script', $this->Html->script(['//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js', '//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js']));
 ?>
 <!DOCTYPE html>
 

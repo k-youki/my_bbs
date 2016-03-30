@@ -17,7 +17,8 @@
             echo $this->Form->input('contents');
             echo $this->Form->input('upload', [
                 'type' => 'file',
-                'label' => 'Image'
+                'label' => 'Image',
+                'accept' => 'jpg',
             ]);
             echo $this->Form->button('投稿', [
                 'class' => 'btn btn-primary'
@@ -45,7 +46,9 @@
                             <td><?= h($postTable->contents) ?>
                                 <?php
                                 if ($postTable->image):
-                                    print "<br><a href='img/uploads/$postTable->image'><img src='img/uploads/thumbnails/$postTable->image' border='0'></a>";
+                                    print "<br>";
+                                    print "<a href='img/uploads/".$postTable->image."' data-lightbox='test'>";
+                                    print "<img src='img/uploads/thumbnails/".$postTable->image." ' ' border='0'></a>";
                                 endif;
                                 ?></td>
                                 <td><?= h($postTable->date) ?></td>

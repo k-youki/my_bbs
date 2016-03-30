@@ -5868,3 +5868,866 @@ Stack Trace:
 #1 {main}
 
 
+2016-03-30 08:41:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 08:41:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 08:48:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 08:48:50 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 08:48:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=desc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 08:48:51 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=desc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:04:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:07:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:07:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:07:54 Warning: Warning (2): Missing argument 1 for App\Controller\PostTableController::add() in [C:\xampp\htdocs\my_bbs\src\Controller\PostTableController.php, line 51]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 51
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-30 09:07:54 Warning: Warning (2): imagecreatefromjpeg() [<a href='http://php.net/function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: gd-jpeg: JPEG library reports unrecoverable error:  in [C:\xampp\htdocs\my_bbs\src\Model\Table\PostTableTable.php, line 69]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+imagecreatefromjpeg - [internal], line ??
+App\Model\Table\PostTableTable::img_upload() - APP/Model\Table\PostTableTable.php, line 69
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 67
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-30 09:07:54 Warning: Warning (2): imagecreatefromjpeg() [<a href='http://php.net/function.imagecreatefromjpeg'>function.imagecreatefromjpeg</a>]: 'img/uploads/z32.gif' is not a valid JPEG file in [C:\xampp\htdocs\my_bbs\src\Model\Table\PostTableTable.php, line 69]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+imagecreatefromjpeg - [internal], line ??
+App\Model\Table\PostTableTable::img_upload() - APP/Model\Table\PostTableTable.php, line 69
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 67
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-30 09:07:54 Warning: Warning (2): imagecopyresized() expects parameter 2 to be resource, boolean given in [C:\xampp\htdocs\my_bbs\src\Model\Table\PostTableTable.php, line 71]
+Trace:
+Cake\Error\BaseErrorHandler::handleError() - CORE\src\Error\BaseErrorHandler.php, line 147
+imagecopyresized - [internal], line ??
+App\Model\Table\PostTableTable::img_upload() - APP/Model\Table\PostTableTable.php, line 71
+App\Controller\PostTableController::add() - APP/Controller\PostTableController.php, line 67
+Cake\Controller\Controller::invokeAction() - CORE\src\Controller\Controller.php, line 429
+Cake\Routing\Dispatcher::_invoke() - CORE\src\Routing\Dispatcher.php, line 114
+Cake\Routing\Dispatcher::dispatch() - CORE\src\Routing\Dispatcher.php, line 87
+[main] - ROOT\webroot\index.php, line 37
+
+
+
+2016-03-30 09:08:34 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:08:53 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:15:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:15:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:15:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:15:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:18:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:18:41 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:19:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:19:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:20:50 Error: Fatal Error (4): syntax error, unexpected 'image' (T_STRING) in [C:\xampp\htdocs\my_bbs\src\Template\PostTable\index.ctp, line 49]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 99
+[main] - [internal], line ??
+
+
+
+2016-03-30 09:20:50 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'image' (T_STRING)
+Request URL: /my_bbs/post-table?sort=date&direction=asc
+Referer URL: http://localhost/my_bbs/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(99): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 49)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-30 09:21:34 Error: Fatal Error (4): syntax error, unexpected 'image' (T_STRING) in [C:\xampp\htdocs\my_bbs\src\Template\PostTable\index.ctp, line 49]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 99
+[main] - [internal], line ??
+
+
+
+2016-03-30 09:21:34 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'image' (T_STRING)
+Request URL: /my_bbs/post-table?sort=date&direction=asc
+Referer URL: http://localhost/my_bbs/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(99): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 49)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-30 09:22:04 Error: Fatal Error (4): syntax error, unexpected 'image' (T_STRING) in [C:\xampp\htdocs\my_bbs\src\Template\PostTable\index.ctp, line 49]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 99
+[main] - [internal], line ??
+
+
+
+2016-03-30 09:22:04 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'image' (T_STRING)
+Request URL: /my_bbs/post-table?sort=date&direction=asc
+Referer URL: http://localhost/my_bbs/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(99): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 49)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-30 09:22:32 Error: Fatal Error (4): syntax error, unexpected 'image' (T_STRING) in [C:\xampp\htdocs\my_bbs\src\Template\PostTable\index.ctp, line 49]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 99
+[main] - [internal], line ??
+
+
+
+2016-03-30 09:22:33 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'image' (T_STRING)
+Request URL: /my_bbs/post-table?sort=date&direction=asc
+Referer URL: http://localhost/my_bbs/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(99): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 49)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-30 09:23:30 Error: Fatal Error (4): syntax error, unexpected 'image' (T_STRING) in [C:\xampp\htdocs\my_bbs\src\Template\PostTable\index.ctp, line 50]
+Trace:
+Cake\Error\BaseErrorHandler::handleFatalError() - CORE\src\Error\BaseErrorHandler.php, line 216
+Cake\Error\BaseErrorHandler::Cake\Error\{closure}() - CORE\src\Error\BaseErrorHandler.php, line 99
+[main] - [internal], line ??
+
+
+
+2016-03-30 09:23:30 Error: [Cake\Error\FatalErrorException] syntax error, unexpected 'image' (T_STRING)
+Request URL: /my_bbs/post-table?sort=date&direction=asc
+Referer URL: http://localhost/my_bbs/post-table
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\vendor\cakephp\cakephp\src\Error\BaseErrorHandler.php(99): Cake\Error\BaseErrorHandler->handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 50)
+#1 [internal function]: Cake\Error\BaseErrorHandler->Cake\Error\{closure}()
+#2 {main}
+
+
+2016-03-30 09:24:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:24:20 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:24:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/ND.jpeg%20%20data-lightbox=
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:24:29 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:24:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:24:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:25:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:25:54 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:26:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:26:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/ND.jpeg%20border=
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:26:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:26:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/JZA80.jpeg%20border=
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:26:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/S2000.jpeg%20border=
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:26:43 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg%20border=
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:26:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/S14.jpeg%20border=
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:26:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/FC.jpeg%20border=
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:26:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/z32.gif%20border=
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:27:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:27:05 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:27:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:27:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:27:32 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:27:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:28:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:28:40 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:28:42 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:29:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Exception Attributes: array (
+  'class' => 'Js',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/js/jquery/jquery.js
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:29:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:29:26 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:32:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:32:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:32:57 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-30 09:33:22 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/%E3%83%90%E3%82%A4%E3%83%91%E3%83%BC.jpeg
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=asc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
