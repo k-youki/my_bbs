@@ -58,18 +58,74 @@ class PostTableTable extends Table {
         return $validator;
     }
 
-    public function img_upload($upload_file)
+    public function img_upload($image_file)
     {
-        if ($upload_file['name']) {
-            $path = "img/uploads/{$upload_file['name']}";
-            move_uploaded_file($upload_file['tmp_name'], $path);
-            list($sw, $sh) = getimagesize($path);
-            $dw = 128;
-            $dh = $dw * $sh / $sw;
-            $src = imagecreatefromjpeg($path);
-            $dst = imagecreatetruecolor($dw, $dh);
-            imagecopyresized($dst, $src, 0, 0, 0, 0, $dw, $dh, $sw, $sh);
-            imagejpeg($dst, "img/uploads/thumbnails/".$upload_file['name']);
+        if ($image_file['name']) {
+            $path = "img/uploads/{$image_file['name']}";
+            move_uploaded_file($image_file['tmp_name'], $path);
+
+            $new_width = 128;
+
+            // 元画像のファイルサイズを取得
+            list($original_width, $original_height) = getimagesize($path);
+
+            //元画像の比率を計算し、高さを設定
+            $proportion = $original_width / $original_height;
+            $new_height = $new_width / $proportion;
+
+            //高さが幅より大きい場合は、高さを幅に合わせ、横幅を縮小
+            if($proportion < 1){
+                $new_height = $new_width;
+                $new_width = $new_width * $proportion;
+            }
+
+            //$file_type = strtolower(end(explode('.', $image_file)));
+            $file_type =  pathinfo($image_file['name'], PATHINFO_EXTENSION);;
+
+            if ($file_type === "jpg" || $file_type === "jpeg") {
+
+                $original_image = ImageCreateFromJPEG($path); //JPEGファイルを読み込む
+                $new_image = ImageCreateTrueColor($new_width, $new_height); // 画像作成
+
+            } elseif ($file_type === "gif") {
+
+                $original_image = ImageCreateFromGIF($path); //GIFファイルを読み込む
+                $new_image = ImageCreateTrueColor($new_width, $new_height); // 画像作成
+
+                /* ----- 透過問題解決 ------ */
+                $alpha = imagecolortransparent($original_image);  // 元画像から透過色を取得する
+                imagefill($new_image, 0, 0, $alpha);       // その色でキャンバスを塗りつぶす
+                imagecolortransparent($new_image, $alpha); // 塗りつぶした色を透過色として指定する
+
+            } elseif ($file_type === "png") {
+
+                $original_image = ImageCreateFromPNG($path); //PNGファイルを読み込む
+                $new_image = ImageCreateTrueColor($new_width, $new_height); // 画像作成
+
+                /* ----- 透過問題解決 ------ */
+                imagealphablending($new_image, false);  // アルファブレンディングをoffにする
+                imagesavealpha($new_image, true);       // 完全なアルファチャネル情報を保存するフラグをonにする
+
+            } else {
+                // 何も当てはまらなかった場合の処理は書いてませんので注意！
+                return;
+
+            }
+
+            // 元画像から再サンプリング
+            ImageCopyResampled($new_image,$original_image,0,0,0,0,$new_width,$new_height,$original_width,$original_height);
+
+            // 画像をブラウザに表示
+            if ($file_type === "jpg" || $file_type === "jpeg") {
+                imagejpeg($new_image, "img/uploads/thumbnails/".$image_file['name']);
+            } elseif ($file_type === "gif") {
+                ImageGIF($new_image, "img/uploads/thumbnails/".$image_file['name']);
+            } elseif ($file_type === "png") {
+                ImagePNG($new_image, "img/uploads/thumbnails/".$image_file['name']);
+            }
+            // メモリを開放する
+            imagedestroy($new_image);
+            imagedestroy($original_image);
         }
     }
 }
