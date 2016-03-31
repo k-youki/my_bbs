@@ -16,10 +16,12 @@
             <?php
             echo $this->Form->input('name');
             echo $this->Form->input('contents');
+            echo "<p class='help-block'>※140文字以内で書いてください</p>";
             echo $this->Form->input('upload', [
                 'type' => 'file',
                 'label' => 'Image',
             ]);
+            echo "<p class='help-block'>※jpg,png,gif形式に対応しています</p>";
             echo $this->Form->button('投稿', [
                 'class' => 'btn btn-primary',
             ]);
