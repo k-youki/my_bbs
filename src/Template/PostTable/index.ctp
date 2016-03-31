@@ -18,7 +18,6 @@
             echo $this->Form->input('upload', [
                 'type' => 'file',
                 'label' => 'Image',
-                'accept' => 'jpg',
             ]);
             echo $this->Form->button('投稿', [
                 'class' => 'btn btn-primary'
@@ -45,10 +44,13 @@
                             <td><?= h($postTable->name) ?></td>
                             <td><?= h($postTable->contents) ?>
                                 <?php
-                                if ($postTable->image):
+                                $image_path = glob("img/uploads/{$postTable->id}.*");
+                                if ($image_path):
+                                    $image_file = explode("/",$image_path[0]);
                                     print "<br>";
-                                    print "<a href='img/uploads/".$postTable->image."' data-lightbox='test'>";
-                                    print "<img src='img/uploads/thumbnails/".$postTable->image." ' ' border='0'></a>";
+                                    //print_r($image_file);
+                                    print "<a href='img/uploads/{$image_file[2]}' data-lightbox='test'>";
+                                    print "<img src='img/uploads/thumbnails/{$image_file[2]}' border='0'></a>";
                                 endif;
                                 ?></td>
                                 <td><?= h($postTable->date) ?></td>

@@ -11,7 +11,8 @@ use Cake\Validation\Validator;
 * PostTable Model
 *
 */
-class PostTableTable extends Table {
+class PostTableTable extends Table
+{
 
     /**
     * Initialize method
@@ -19,7 +20,8 @@ class PostTableTable extends Table {
     * @param array $config The configuration for the Table.
     * @return void
     */
-    public function initialize(array $config) {
+    public function initialize(array $config)
+    {
         parent::initialize($config);
 
         $this->table('post_table');
@@ -33,7 +35,8 @@ class PostTableTable extends Table {
     * @param \Cake\Validation\Validator $validator Validator instance.
     * @return \Cake\Validation\Validator
     */
-    public function validationDefault(Validator $validator) {
+    public function validationDefault(Validator $validator)
+    {
         $validator
         ->integer('id')
         ->allowEmpty('id', 'create');
@@ -58,10 +61,21 @@ class PostTableTable extends Table {
         return $validator;
     }
 
-    public function img_upload($image_file)
+    public function img_upload($image_file,$id)
     {
         if ($image_file['name']) {
-            $path = "img/uploads/{$image_file['name']}";
+            $file_type =  pathinfo($image_file['name'], PATHINFO_EXTENSION);
+            if ($file_type === "jpg" || $file_type === "jpeg" || $file_type === "JPG") {
+                $file_type = "jpg";
+            } elseif ($file_type === "gif") {
+                $file_type = "gif";
+            } elseif ($file_type === "png") {
+                $file_type = "png";
+            } else {
+                return ; //何も当てはまらない場合の処理
+            }
+            $path = "img/uploads/{$id}.{$file_type}";
+            $t_path = "img/uploads/thumbnails/{$id}.{$file_type}";
             move_uploaded_file($image_file['tmp_name'], $path);
 
             $new_width = 128;
@@ -79,10 +93,7 @@ class PostTableTable extends Table {
                 $new_width = $new_width * $proportion;
             }
 
-            //$file_type = strtolower(end(explode('.', $image_file)));
-            $file_type =  pathinfo($image_file['name'], PATHINFO_EXTENSION);;
-
-            if ($file_type === "jpg" || $file_type === "jpeg") {
+            if ($file_type === "jpg") {
 
                 $original_image = ImageCreateFromJPEG($path); //JPEGファイルを読み込む
                 $new_image = ImageCreateTrueColor($new_width, $new_height); // 画像作成
@@ -106,22 +117,18 @@ class PostTableTable extends Table {
                 imagealphablending($new_image, false);  // アルファブレンディングをoffにする
                 imagesavealpha($new_image, true);       // 完全なアルファチャネル情報を保存するフラグをonにする
 
-            } else {
-                // 何も当てはまらなかった場合の処理は書いてませんので注意！
-                return;
-
             }
 
             // 元画像から再サンプリング
             ImageCopyResampled($new_image,$original_image,0,0,0,0,$new_width,$new_height,$original_width,$original_height);
 
             // 画像をブラウザに表示
-            if ($file_type === "jpg" || $file_type === "jpeg") {
-                imagejpeg($new_image, "img/uploads/thumbnails/".$image_file['name']);
+            if ($file_type === "jpg") {
+                imagejpeg($new_image, $t_path);
             } elseif ($file_type === "gif") {
-                ImageGIF($new_image, "img/uploads/thumbnails/".$image_file['name']);
+                ImageGIF($new_image, $t_path);
             } elseif ($file_type === "png") {
-                ImagePNG($new_image, "img/uploads/thumbnails/".$image_file['name']);
+                ImagePNG($new_image, $t_path);
             }
             // メモリを開放する
             imagedestroy($new_image);
