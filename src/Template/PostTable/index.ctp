@@ -9,7 +9,8 @@
 <div class="col-md-3">
     <?= $this->Form->create($postEntity, [
         'type' => 'file',
-        'url' => ['action' => 'add']
+        'url' => ['action' => 'add'],
+        'onsubmit'=>'return confirm("投稿します。よろしいですか？")',
         ]) ?>
         <fieldset>
             <?php
@@ -20,7 +21,7 @@
                 'label' => 'Image',
             ]);
             echo $this->Form->button('投稿', [
-                'class' => 'btn btn-primary'
+                'class' => 'btn btn-primary',
             ]);
             ?>
         </fieldset>
