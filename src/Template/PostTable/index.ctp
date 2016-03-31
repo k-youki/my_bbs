@@ -15,6 +15,7 @@
         <fieldset>
             <?php
             echo $this->Form->input('name');
+            echo "<p class='help-block'>※20文字以内で書いてください</p>";
             echo $this->Form->input('contents');
             echo "<p class='help-block'>※140文字以内で書いてください</p>";
             echo $this->Form->input('upload', [

@@ -10714,3 +10714,31 @@ Stack Trace:
 #1 {main}
 
 
+2016-03-31 12:57:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/117.JPG
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=desc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
+2016-03-31 12:57:08 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Img could not be found.
+Exception Attributes: array (
+  'class' => 'Img',
+  'plugin' => NULL,
+  'prefix' => NULL,
+  '_ext' => NULL,
+)
+Request URL: /my_bbs/img/uploads/thumbnails/119.JPG
+Referer URL: http://localhost/my_bbs/post-table?sort=date&direction=desc
+Stack Trace:
+#0 C:\xampp\htdocs\my_bbs\webroot\index.php(37): Cake\Routing\Dispatcher->dispatch(Object(Cake\Network\Request), Object(Cake\Network\Response))
+#1 {main}
+
+
